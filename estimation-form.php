@@ -253,10 +253,6 @@ function lfb_install()
   		    UNIQUE KEY id (id)
   		) $charset_collate;";
         dbDelta($sql);
-        $rows_affected = $wpdb->insert($db_table_name, array('previewHeight' => 300));
-		$wpdb->update($db_table_name, array('purchaseCode' => "2b35dec6-5674-314f-5d8d-9fe900dc03b8"), array('id' => 1));
-    }
-
 
     global $isInstalled;
     $isInstalled = true;
